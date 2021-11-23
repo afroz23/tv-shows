@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Card(props) {
     const date = JSON.stringify(props.date);
     let tarikh = date[9] + date[10];
@@ -32,8 +31,8 @@ export default function Card(props) {
     }
 
     return (
-        <div className="flex flex-col bg-gray-300 m-3">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg m-3 w-48 h-60 hover:scale-110">
+        <div className="flex flex-col justify-center align-middle  bg-gray-300 m-3 rounded-lg">
+            <div className="max-w-sm bg-center rounded overflow-hidden shadow-lg m-3 w-48 h-60 hover:scale-110">
                 <div>
                     <img
                         className="object-cover h-48 w-full "
@@ -56,9 +55,11 @@ export default function Card(props) {
                 {tarikh}th {month}, {year}
             </div>
             <div>rating: {props.rating ? props.rating : "8.0"}</div>
-            <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                {props.name}
-            </button>
+            <div>
+                <button className="mb-3 w-48 center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    {props.name}
+                </button>
+            </div>
         </div>
     );
 }

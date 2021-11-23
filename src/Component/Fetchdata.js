@@ -5,7 +5,6 @@ export default function Fetchdata() {
         loading: true,
         movies: [],
     });
-
     useEffect(() => {
         async function fetchData() {
             const url = "https://api.tvmaze.com/search/shows?q=avengers";
@@ -20,7 +19,7 @@ export default function Fetchdata() {
         return <div>loading...</div>;
     }
     return (
-        <div className="flex flex-row justify-start flex-wrap h-auto w-screen  ">
+        <div className="flex flex-row justify-center flex-wrap h-auto w-screen  ">
             {data.movies.map((movie, i) => {
                 return (
                     <div key={i}>
