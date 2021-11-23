@@ -53,7 +53,7 @@ export default function Card(props) {
             <div>Language: {props.language}</div>
             <div>Runtime: {props.runtime}</div>
             <div>
-                {tarikh} {month}, {year}
+                {tarikh}th {month}, {year}
             </div>
             <div>rating: {props.rating ? props.rating : "8.0"}</div>
             <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
